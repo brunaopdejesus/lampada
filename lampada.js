@@ -26,7 +26,8 @@ function ligarLampada() {
 function desligarLampada() {
     if (!lampadaQuebrada()) {
         lampada.src = "img/desligada.jpg"
-        botoesLigaDesliga(false, true) 
+        botoesLigaDesliga(false, true)
+        
     }
 }
 
@@ -40,7 +41,6 @@ function quebrarLampada() {
 // }
 
 const lampadaDesligada = () => lampada.src.includes("desligada")
-
 
 function trocarImagem() {
     if (lampadaDesligada()) {
@@ -61,6 +61,19 @@ function piscar() {
     }
 }
 
+function piscarVerde() {
+    const parar = document.getElementById("piscar")
+
+    if (parar.textContent == "Parar") {
+        window.document.getElementById("piscar").style.background = "#FF0000"
+    } else if (parar.textContent == "Piscar") {
+        window.document.getElementById("piscar").style.background = "#00FF00"
+    } else {
+        alert("it didn't work b")
+    }
+
+}
+
 
 
 //  Eventos
@@ -70,6 +83,7 @@ document.getElementById("lampada").addEventListener("dblclick", quebrarLampada)
 document.getElementById("lampada").addEventListener("mouseover", ligarLampada)
 document.getElementById("lampada").addEventListener("mouseleave", desligarLampada)
 document.getElementById("piscar").addEventListener("click", piscar)
+document.getElementById("piscar").addEventListener("click", piscarVerde)
 
 //  FUNÇÕES ANÔNIMAS
     
