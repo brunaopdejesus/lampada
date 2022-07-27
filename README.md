@@ -6,6 +6,12 @@ O projeto consiste em criar uma lâmpada com três ações, ligar, desligar e qu
 
 O código foi construído pensando em boas práticas, como responsabilidade única e funções puras.
 
-![](img/Capturar.PNG)
+<a href="https://storyset.com/illustration/devices/bro">
+  <img align="right" src="Devices-bro (1).png" width=40% height=40%/>
+</a>
 
+<!-- ![](img/Capturar.PNG) 
+ -->
+ 
+ 
 
